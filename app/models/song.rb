@@ -13,7 +13,7 @@ class Song < ActiveRecord::Base
     if Artist.find_by_name("Drake") != nil
       drake = Artist.find_by_name("Drake")
       self.artist = drake
-    else      
+    else
       drake = Artist.create(name: "Drake")
       self.artist = drake
     end
